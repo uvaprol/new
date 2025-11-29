@@ -57,5 +57,57 @@ header{
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
+}
+
+.top{
+    width: 400px;
+    height: 250px;
+    border-bottom: solid 1px black;
+    box-shadow: inset 0px -1px 3px rgba(0, 0, 0, 25);
+}
+
+.top img{
+    margin-left: 75px; /*calc((400px - 250px)/2);*/
+    width: 250px;
+    height: 250px;
+}
+
+.center{
+    width: 400px;
+    height: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.bottom{
+    width: 400px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.bottom button{
+    width: 150px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #188194;
+    color: white;
+}
+
+main{
+    width: calc(100% - 70px);
+    padding: 30px 35px;
+    gap: calc((100% - 400px * 3)/2);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin-top: 30px;
 }
